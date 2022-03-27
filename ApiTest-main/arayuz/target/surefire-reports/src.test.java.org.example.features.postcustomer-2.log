@@ -1,0 +1,2 @@
+19:29:25.713 found scenario at line: 9 - ^get call a tester$
+19:29:25.899 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js

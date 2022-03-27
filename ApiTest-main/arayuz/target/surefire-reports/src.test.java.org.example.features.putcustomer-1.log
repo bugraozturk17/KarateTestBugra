@@ -1,0 +1,49 @@
+15:28:31.541 found scenario at line: 2 - ^Put customer$
+15:28:31.718 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:28:32.281 request:
+1 > PUT https://api-101.glitch.me/customer/4733
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 44
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-101.glitch.me
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+1 > auth_key: hello
+1 > user-id: 04c9244d-a4ae-42c0-b1ce-be7e3e07b05b
+{"name":"Catherine Medici","type":"Company"}
+
+15:28:36.817 response time in milliseconds: 4530,27
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 537
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 26 Mar 2022 12:28:36 GMT
+1 < etag: W/"219-CJqlXGGQvrZhcvnG/DGMHsZHjtQ"
+1 < x-powered-by: Express
+{"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"You updated a customer! ✅","intro":"Your customer was updated in the database.","steps":[{"note":"Go back into the first request you opened `Get all customers` and **Send** it again before returning here—you should see your updated customer in the array!"}],"next":[{"step":"Next open the `DEL Remove customer` request and click **Send**."}]}}
+
+15:28:36.828 [print] {
+  "welcome": "You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.",
+  "tutorial": {
+    "title": "You updated a customer! ✅",
+    "intro": "Your customer was updated in the database.",
+    "steps": [
+      {
+        "note": "Go back into the first request you opened `Get all customers` and **Send** it again before returning here\u2014you should see your updated customer in the array!"
+      }
+    ],
+    "next": [
+      {
+        "step": "Next open the `DEL Remove customer` request and click **Send**."
+      }
+    ]
+  }
+}
+
+  }
+}
+
+date customers you added using the `POST` method during the current session (and that haven't been deleted).","steps":[{"note":"This request includes a path parameter with `/:customer_id` at the end of the request address\u2014open **Params** and replace `placeholder` with the `id` of a customer you added when you sent the `POST` request. Copy the `id` from the response in the `Get all customers` request. ***You can only update a customer you added.***"}],"next":[{"step":"With the ID parameter for a customer _you added_ during this session in place, click **Send** again."}]}}
+]}}
+is session in place, click **Send** again."}]}}
+

@@ -1,0 +1,24 @@
+15:27:13.198 found scenario at line: 2 - ^Del customer$
+15:27:13.397 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:13.871 request:
+1 > DELETE https://api-101.glitch.me/customer/4734
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api-101.glitch.me
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+1 > auth_key: hello
+1 > user-id: 04c9244d-a4ae-42c0-b1ce-be7e3e07b05b
+
+15:27:21.415 response time in milliseconds: 7534,08
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 769
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 26 Mar 2022 12:27:21 GMT
+1 < etag: W/"301-P6Jf9E/gqfOEw4L0gco1ohushEI"
+1 < x-powered-by: Express
+{"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"You deleted a customer! 🏆","intro":"Your customer was removed from the database.","steps":[{"note":"Go back into the first request you opened `Get all customers` and **Send** it again before returning here—you should see that your deleted customer is no longer in the array!"}],"next":[{"step":"🚀 You completed the API 101 collection! Check out the **API Learner** template to continue learning—it walks you through remixing your own API!<br/><br/>[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/cf574a217e39178d2c20)"}]}}
+
+15:27:21.533 status code was: 200, expected: 204, response time: 7534, url: https://api-101.glitch.me/customer/4734, response: {"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"You deleted a customer! 🏆","intro":"Your customer was removed from the database.","steps":[{"note":"Go back into the first request you opened `Get all customers` and **Send** it again before returning here\u2014you should see that your deleted customer is no longer in the array!"}],"next":[{"step":"🚀 You completed the API 101 collection! Check out the **API Learner** template to continue learning\u2014it walks you through remixing your own API!<br/><br/>[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/cf574a217e39178d2c20)"}]}}
+e ID parameter for a customer _you added_ during this session in place, click **Send** again."}]}}
+]}}

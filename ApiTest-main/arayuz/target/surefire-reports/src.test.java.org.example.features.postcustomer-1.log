@@ -1,0 +1,50 @@
+15:05:38.512 found scenario at line: 2 - ^post customer$
+15:05:38.690 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:05:39.230 request:
+1 > POST https://api-101.glitch.me/customer
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 39
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-101.glitch.me
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+1 > auth_key: hello
+1 > user-id: 04c9244d-a4ae-42c0-b1ce-be7e3e07b05b
+{"name":"John Curtin","type":"Company"}
+
+15:05:46.716 response time in milliseconds: 7481,84
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 616
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 26 Mar 2022 12:05:46 GMT
+1 < etag: W/"268-Dux6cjv4Ejgvmtkzj/k9m71ZuRo"
+1 < x-powered-by: Express
+{"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"You added a new customer! 🏅","intro":"Your new customer was added to the database.","steps":[{"note":"Go back into the first request you opened `Get all customers` and **Send** it again before returning here—you should see your new addition in the array! _Note that this will only work if you're using the API 101 Postman template._"}],"next":[{"step":"Next open the `PUT Update customer` request and click **Send**."}]}}
+
+}
+
+
+:09:40.901 request:
+2 > PUT https://api-101.glitch.me/customer/:customer_id
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 39
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: api-101.glitch.me
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2 > auth_key: hello
+2 > user-id: 04c9244d-a4ae-42c0-b1ce-be7e3e07b05b
+{"name":"Duygu Seyis","type":"Company"}
+
+11:09:43.165 response time in milliseconds: 2259,20
+2 < 400
+2 < Connection: keep-alive
+2 < Content-Length: 823
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Thu, 24 Mar 2022 08:09:43 GMT
+2 < etag: W/"337-dugk5IU8tDU9X3lqRGFCUBXbT/M"
+2 < x-powered-by: Express
+{"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"Your request is invalid! ⛔","intro":"You can only update customers you added using the `POST` method during the current session (and that haven't been deleted).","steps":[{"note":"This request includes a path parameter with `/:customer_id` at the end of the request address—open **Params** and replace `placeholder` with the `id` of a customer you added when you sent the `POST` request. Copy the `id` from the response in the `Get all customers` request. ***You can only update a customer you added.***"}],"next":[{"step":"With the ID parameter for a customer _you added_ during this session in place, click **Send** again."}]}}
+
+11:09:43.172 status code was: 400, expected: 200, response time: 2259, url: https://api-101.glitch.me/customer/:customer_id, response: {"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"Your request is invalid! ⛔","intro":"You can only update customers you added using the `POST` method during the current session (and that haven't been deleted).","steps":[{"note":"This request includes a path parameter with `/:customer_id` at the end of the request address\u2014open **Params** and replace `placeholder` with the `id` of a customer you added when you sent the `POST` request. Copy the `id` from the response in the `Get all customers` request. ***You can only update a customer you added.***"}],"next":[{"step":"With the ID parameter for a customer _you added_ during this session in place, click **Send** again."}]}}

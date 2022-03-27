@@ -1,0 +1,42 @@
+16:03:57.289 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:03:57.346 request:
+1 > PUT https://api-101.glitch.me/customer/4731
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-101.glitch.me
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+1 > auth_key: hello
+1 > user-id: 04c9244d-a4ae-42c0-b1ce-be7e3e07b05b
+{"name":"Lionel Messi","type":"Individual"}
+
+16:04:00.906 response time in milliseconds: 3555,58
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 537
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Mar 2022 13:04:00 GMT
+1 < etag: W/"219-CJqlXGGQvrZhcvnG/DGMHsZHjtQ"
+1 < x-powered-by: Express
+{"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"You updated a customer! ✅","intro":"Your customer was updated in the database.","steps":[{"note":"Go back into the first request you opened `Get all customers` and **Send** it again before returning here—you should see your updated customer in the array!"}],"next":[{"step":"Next open the `DEL Remove customer` request and click **Send**."}]}}
+
+16:04:00.911 [print] {
+  "welcome": "You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.",
+  "tutorial": {
+    "title": "You updated a customer! ✅",
+    "intro": "Your customer was updated in the database.",
+    "steps": [
+      {
+        "note": "Go back into the first request you opened `Get all customers` and **Send** it again before returning here\u2014you should see your updated customer in the array!"
+      }
+    ],
+    "next": [
+      {
+        "step": "Next open the `DEL Remove customer` request and click **Send**."
+      }
+    ]
+  }
+}
+
+

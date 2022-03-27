@@ -1,0 +1,25 @@
+15:29:08.264 found scenario at line: 2 - ^get call test$
+15:29:08.447 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:29:08.925 request:
+1 > GET https://api-101.glitch.me/customer?id=4733
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: api-101.glitch.me
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+1 > user-id: 04c9244d-a4ae-42c0-b1ce-be7e3e07b05b
+
+15:29:10.888 response time in milliseconds: 1955,33
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 661
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 26 Mar 2022 12:29:10 GMT
+1 < etag: W/"295-ru5CI2rsrf6V8P+jYV3oFz3Vvpg"
+1 < x-powered-by: Express
+{"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","data":{"customer":{"id":4733,"name":"Catherine Medici","type":"Company"}},"tutorial":{"title":"You sent a request with a query parameter! 🎉","intro":"Your request used the `id` parameter to retrieve a specific customer.","steps":[{"note":"The API returned a JSON object representing the customer:","raw_data":{"customer":{"id":4733,"name":"Catherine Medici","type":"Company"}}}],"next":[{"step":"Now open the next request in the collection `POST Add new customer` and click **Send**."}]}}
+
+Send**."}]}}
+
+e":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"Your request contains invalid info! 😕","intro":"This endpoint requires the `id` for a valid customer.","steps":[{"note":"In **Params** add `id` in the **Key** column, and the ID of any customer you see in the array when you send the `Get all customers` request)."}],"next":[{"step":"With your parameter in place (you'll see e.g. `?id=3` added to the request address), click **Send** again."}]}}

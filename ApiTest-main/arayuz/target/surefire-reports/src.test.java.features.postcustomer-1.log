@@ -1,0 +1,23 @@
+16:04:04.848 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:04:04.863 request:
+1 > POST https://api-101.glitch.me/customer
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-101.glitch.me
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+1 > auth_key: hello
+1 > user-id: 04c9244d-a4ae-42c0-b1ce-be7e3e07b05b
+{"name":"Cristiano Ronaldo","type":"Company"}
+
+16:04:09.679 response time in milliseconds: 4811,38
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 616
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Mar 2022 13:04:09 GMT
+1 < etag: W/"268-Dux6cjv4Ejgvmtkzj/k9m71ZuRo"
+1 < x-powered-by: Express
+{"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","tutorial":{"title":"You added a new customer! 🏅","intro":"Your new customer was added to the database.","steps":[{"note":"Go back into the first request you opened `Get all customers` and **Send** it again before returning here—you should see your new addition in the array! _Note that this will only work if you're using the API 101 Postman template._"}],"next":[{"step":"Next open the `PUT Update customer` request and click **Send**."}]}}
+

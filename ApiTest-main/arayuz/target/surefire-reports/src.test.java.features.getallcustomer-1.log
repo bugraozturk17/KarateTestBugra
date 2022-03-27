@@ -1,0 +1,24 @@
+00:52:27.367 found scenario at line: 2 - ^get call test$
+00:52:27.643 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:52:28.314 request:
+1 > GET https://api-101.glitch.me/customers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: api-101.glitch.me
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+1 > user-id: 04c9244d-a4ae-42c0-b1ce-be7e3e07b05b
+
+00:52:30.566 response time in milliseconds: 2241,95
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 1481
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Mar 2022 21:52:30 GMT
+1 < etag: W/"5c9-b2kexxoOyCkzVTNzjUQeg+PIiLU"
+1 < x-powered-by: Express
+{"welcome":"You're learning API 101! Check out the 'data' object below to see the values returned by the API. Click Visualize for a more readable view of the response.","data":{"customers":[{"id":1,"name":"Blanche Devereux","type":"Individual"},{"id":2,"name":"Rose Nylund","type":"Individual"},{"id":3,"name":"Shady Pines","type":"Company"},{"id":4721,"name":"Dorothy Zborna","type":"Individual"},{"id":4722,"name":"Bugra Ozturk","type":"Company"},{"id":4731,"name":"Lionel Messi","type":"Individual"},{"id":4733,"name":"Catherine Medici","type":"Company"},{"id":4776,"name":"John Curtin","type":"Company"},{"id":4784,"name":"Cristiano Ronaldo","type":"Company"}]},"tutorial":{"title":"You sent a request! 🚀","intro":"Your request used `GET` method and sent to the `/customers` path.","steps":[{"note":"The API returned JSON data including an array of customers:","raw_data":{"customers":[{"id":1,"name":"Blanche Devereux","type":"Individual"},{"id":2,"name":"Rose Nylund","type":"Individual"},{"id":3,"name":"Shady Pines","type":"Company"},{"id":4721,"name":"Dorothy Zborna","type":"Individual"},{"id":4722,"name":"Bugra Ozturk","type":"Company"},{"id":4731,"name":"Lionel Messi","type":"Individual"},{"id":4733,"name":"Catherine Medici","type":"Company"},{"id":4776,"name":"John Curtin","type":"Company"},{"id":4784,"name":"Cristiano Ronaldo","type":"Company"}]}}],"next":[{"step":"Now open the next `GET` request in the collection `Get one customer` and click **Send**."}]}}
+
+ep":"Now open the next `GET` request in the collection `Get one customer` and click **Send**."}]}}
+
